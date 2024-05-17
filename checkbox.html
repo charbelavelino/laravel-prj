@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="checkbox" name="LetterNeed" id="LetterNeed" onclick="validate(this)">Not important</input>
+    <label>
+        <input type="checkbox" id="op1" value="op1_value" onchange="validacion()">hellocheck
+      </label>
+      <label>
+        <input type="checkbox" id="op1" value="op1_value" onchange="anyfun()">hellocheck1
+      </label>
+    <script>
+        function validate(aCheckBox) {
+            if (aCheckBox.checked) {
+              alert("checked");
+            } else {
+              alert("You didn't check it! Let me check it for you.");
+            }
+          }
+
+          function validacion(){
+            if (document.getElementById('op1').checked) {
+              var x61=document.getElementById('op1').value;
+            } else {
+              var x61="";
+            }
+
+            alert(" Me gusta : " +x61 );
+          }
+
+          function anyfun(){
+            alert(" i am here " );
+          }
+    </script>
+</body>
+</html>
